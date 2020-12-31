@@ -2,7 +2,10 @@
   "name": "lesson",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://corey-andrews.github.io/wumpus",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -10,6 +13,7 @@
   "dependencies": {
     "autoprefixer": "^10.1.0",
     "axios": "^0.21.1",
+    "gh-pages": "^3.1.0",
     "next": "10.0.4",
     "postcss": "^8.2.1",
     "react": "17.0.1",
